@@ -76,6 +76,27 @@ A **Project** = a saved workspace: **custom instructions + uploaded reference fi
 **Example:** upload the 12-page vendor contract →
 > "From the attached contract only: list every deadline and who's responsible, as a table. If something isn't stated, write 'not specified' — don't infer."
 
+### 5a. Working with attachments — refer to them clearly
+**Attach vs. paste:** attach **files** (PDF, Word, Excel, slides, images/screenshots). **Paste** short snippets of text directly. Don't paste a huge document as text when you can attach the file.
+
+**Refer to attachments by name — especially with more than one.** Vague references ("the document") confuse Claude when several files are attached.
+- One file: *"In the attached file, …"* is fine.
+- **Multiple files: name each one.**
+  > "Compare **Q1_Report.pdf** and **Q2_Report.pdf** — list what changed in revenue. Use **brand_guide.pdf** for the tone of your summary."
+- **Point to the part you mean:** "see page 3," "the table under 'Pricing'," "the second screenshot."
+
+**Tell Claude what to *do* with each attachment** (its role):
+> "Use **contract.pdf** as the source of facts, **email_examples.docx** as the tone to copy, and **checklist.xlsx** as the format to fill in."
+
+**Images & screenshots:** you can attach them and ask Claude to read/describe/extract.
+> "From the attached screenshot, type out the error message exactly and explain it in plain English."
+
+**Good habits:**
+- **Name files clearly before uploading** (`Acme_MSA_2026.pdf`, not `scan_0012.pdf`) — clear names = clearer references.
+- **State scope:** "using only the attached files" stops it from mixing in guesses.
+- **Confirm it loaded:** if unsure, ask *"List the files you can see and one line on each"* before the real task.
+- ⚠️ Same data rule applies to attachments: **don't upload confidential/regulated files** into a tool not approved for them.
+
 ---
 
 ## 6. MCPs / Connectors (give Claude access to live tools & data)
