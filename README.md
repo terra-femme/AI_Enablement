@@ -11,6 +11,7 @@ A teaching + light-consulting venture covering two adjacent disciplines:
 ## Syllabus (tiered — deliver in order)
 - **Tier 0 — Foundations / Myth-busting**: cutoff vs. live, not-a-search-engine, what a model is, tokens & context, "does it train on our data?"
 - **Tier 1 — Practical use**: model/surface selection, prompting basics, the verification habit, what never to paste in
+- **Tier 1.5 — Saving, organizing & finding your AI work** (non-technical teams): no git/GitHub — Claude Projects + chat history for work-in-progress, cloud-drive Version History as the "save button," a team prompt library; bridges to governance (see `docs/tier1_5-saving-organizing-ai-work.md`)
 - **Tier 2 — Role-based playbooks**: sales, HR, finance/ops, legal/compliance, exec
 - **Tier 3 — Governance & safety**: acceptable-use policy, data classification, human-in-the-loop, shadow AI, NIST AI RMF / ISO 42001 awareness
 - **Tier 4 — Rollout & measurement**: champions, adoption metrics, ROI, 30/60/90 plan
