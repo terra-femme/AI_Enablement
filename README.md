@@ -17,6 +17,9 @@ A teaching + light-consulting venture covering two adjacent disciplines:
 - **Tier 4 — Rollout & measurement**: champions, adoption metrics, ROI, 30/60/90 plan
 - **Tier 5 — AI-Enabled Threats & Defense**: how scammers use AI against businesses — AI-generated job applications & fake/deepfake candidates, AI phishing & Business Email Compromise, voice/video deepfakes, data leakage & shadow AI as attack surface, and a small-business defense playbook (see `docs/tier5-ai-threats.md`)
 
+## Creator tooling (how to MAKE the content)
+- `docs/content-production-toolkit.md` — Remotion (React-based video) MCP options, infographic routes (Claude Artifacts vs. Figma MCP), and the reusable infographic brief. This is the creator's workflow, not client-facing material.
+
 ## Repo layout
 - `docs/` — drafts, skill outputs, changelogs, finished artifacts
 
