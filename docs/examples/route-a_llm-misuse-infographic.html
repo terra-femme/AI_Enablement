@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+  ROUTE A EXAMPLE — Claude Artifacts style infographic (self-contained HTML/SVG)
+  Topic: common business pain point — misuse of LLMs
+  Format: vertical 1080 x 1350 (LinkedIn / Instagram portrait)
+  How to use: open in a browser, screenshot the .card, or print-to-PDF.
+  Built to the venture teaching rules: ONE message, rule of 3, analogy included.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>3 Ways Your Team Is Misusing AI</title>
+<style>
+  :root{
+    --bg:#0e1126; --card:#151a36; --ink:#eef1ff; --muted:#9aa3c7;
+    --amber:#f5b544; --teal:#46d3c2; --rose:#ff6b8a; --line:rgba(255,255,255,.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#070914;display:flex;justify-content:center;padding:40px;
+    font-family:"Segoe UI",-apple-system,Roboto,Helvetica,Arial,sans-serif}
+  .card{width:1080px;height:1350px;background:
+      radial-gradient(1200px 600px at 80% -10%,rgba(70,211,194,.10),transparent 60%),
+      radial-gradient(900px 500px at -10% 110%,rgba(245,181,68,.10),transparent 55%),
+      var(--bg);
+    color:var(--ink);border-radius:28px;padding:72px 72px 56px;position:relative;
+    overflow:hidden;border:1px solid var(--line)}
+  .kicker{display:inline-flex;align-items:center;gap:10px;font-size:20px;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--amber);font-weight:700}
+  .kicker::before{content:"";width:34px;height:3px;background:var(--amber);border-radius:2px}
+  h1{font-size:74px;line-height:1.04;margin:22px 0 14px;font-weight:800;letter-spacing:-.02em}
+  h1 .hl{color:var(--amber)}
+  .sub{font-size:26px;color:var(--muted);max-width:760px;margin-bottom:46px}
+  .item{display:grid;grid-template-columns:96px 1fr;gap:28px;align-items:start;
+    background:var(--card);border:1px solid var(--line);border-radius:20px;
+    padding:32px 34px;margin-bottom:24px}
+  .num{width:96px;height:96px;border-radius:18px;display:flex;align-items:center;
+    justify-content:center;font-size:44px;font-weight:800;color:#0e1126}
+  .i1 .num{background:var(--rose)} .i2 .num{background:var(--amber)} .i3 .num{background:var(--teal)}
+  .item h2{font-size:34px;font-weight:800;margin-bottom:6px;letter-spacing:-.01em}
+  .risk{font-size:22px;color:var(--muted);margin-bottom:14px}
+  .risk b{color:var(--rose);font-weight:700}
+  .fix{display:inline-flex;align-items:center;gap:10px;font-size:22px;font-weight:700;
+    color:var(--teal)}
+  .fix::before{content:"FIX";font-size:14px;letter-spacing:.12em;background:rgba(70,211,194,.15);
+    color:var(--teal);padding:5px 10px;border-radius:7px}
+  .analogy{margin-top:30px;padding:26px 30px;border-left:4px solid var(--amber);
+    background:rgba(245,181,68,.07);border-radius:0 14px 14px 0;font-size:24px;line-height:1.45}
+  .analogy b{color:var(--amber)}
+  .foot{position:absolute;left:72px;right:72px;bottom:40px;display:flex;
+    justify-content:space-between;align-items:center;color:var(--muted);font-size:20px;
+    border-top:1px solid var(--line);padding-top:22px}
+  .brand{font-weight:800;color:var(--ink);letter-spacing:.01em}
+</style>
+</head>
+<body>
+  <div class="card">
+    <span class="kicker">AI at Work · Risk</span>
+    <h1>3 ways your team is <span class="hl">quietly misusing AI</span></h1>
+    <p class="sub">Same tool, three expensive habits — and the one-line fix for each.</p>
+
+    <div class="item i1">
+      <div class="num">1</div>
+      <div>
+        <h2>Pasting confidential data into public AI</h2>
+        <p class="risk">Client data, records, and secrets <b>leave your control</b> and can't be pulled back.</p>
+        <span class="fix">Use only sanctioned tools — never paste what you couldn't email to a stranger.</span>
+      </div>
+    </div>
+
+    <div class="item i2">
+      <div class="num">2</div>
+      <div>
+        <h2>Trusting answers without checking</h2>
+        <p class="risk">Confident, <b>made-up information</b> reaches clients with your name on it.</p>
+        <span class="fix">AI drafts, humans approve — verify before you send.</span>
+      </div>
+    </div>
+
+    <div class="item i3">
+      <div class="num">3</div>
+      <div>
+        <h2>Treating it like a live search engine</h2>
+        <p class="risk">Outdated facts and <b>invented sources</b> slip into real work.</p>
+        <span class="fix">Confirm anything factual — it reasons, it doesn't "look it up."</span>
+      </div>
+    </div>
+
+    <div class="analogy">
+      Think of AI as a <b>brilliant new intern</b>: fast and helpful, but you'd never
+      hand it client secrets or send its first draft to a customer unchecked.
+    </div>
+
+    <div class="foot">
+      <span class="brand">AI Enablement &amp; Governance</span>
+      <span>Save this · Share with your team</span>
+    </div>
+  </div>
+</body>
+</html>
