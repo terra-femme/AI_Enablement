@@ -23,5 +23,13 @@ A teaching + light-consulting venture covering two adjacent disciplines:
 ## Repo layout
 - `docs/` — drafts, skill outputs, changelogs, finished artifacts
 
-## Status
-Early scaffold. First artifacts planned: Acceptable Use Policy template, "AI 101" lunch-and-learn outline, Tier 0 myth-busting scripts.
+## Built so far
+- Syllabus Tiers 0–5 (Tier 1.5 + Tier 5 fully drafted in `docs/`)
+- `docs/content-production-toolkit.md` — video (Remotion) + infographic workflow
+- `docs/examples/` — Route A (HTML infographic) + Route B (Figma spec), LLM-misuse pain point
+- `docs/acceptable-use-policy-template.md` — fill-in-the-blanks AI AUP (Tier 3)
+
+## Next planned
+- "AI 101" lunch-and-learn outline (Tier 0/1 pilot deck)
+- Tier 0 myth-busting scripts
+- Tier 2 role-based playbook (HR or finance)
