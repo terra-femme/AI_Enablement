@@ -14,6 +14,7 @@ A teaching + light-consulting venture covering two adjacent disciplines:
 - **Tier 2 — Role-based playbooks**: sales, HR, finance/ops, legal/compliance, exec
 - **Tier 3 — Governance & safety**: acceptable-use policy, data classification, human-in-the-loop, shadow AI, NIST AI RMF / ISO 42001 awareness
 - **Tier 4 — Rollout & measurement**: champions, adoption metrics, ROI, 30/60/90 plan
+- **Tier 5 — AI-Enabled Threats & Defense**: how scammers use AI against businesses — AI-generated job applications & fake/deepfake candidates, AI phishing & Business Email Compromise, voice/video deepfakes, data leakage & shadow AI as attack surface, and a small-business defense playbook (see `docs/tier5-ai-threats.md`)
 
 ## Repo layout
 - `docs/` — drafts, skill outputs, changelogs, finished artifacts
