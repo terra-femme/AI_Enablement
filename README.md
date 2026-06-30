@@ -30,6 +30,7 @@ A teaching + light-consulting venture covering two adjacent disciplines:
 - `docs/acceptable-use-policy-template.md` — fill-in-the-blanks AI AUP (Tier 3)
 - `docs/ai-101/` — full lunch & learn: master outline, 6 lesson plans, video script, Q&A cheat sheet
 - `docs/presenter/` — presenter best-practices (speaking + advice-giving) + a technical knowledge base (MCPs, skills, CLAUDE.md hierarchy, Code-vs-Enterprise, personas)
+- `docs/cheat-sheets/claude-power-cheat-sheet.md` — condensed end-user reference: CREF prompting, priming, result intention, Project contents, retrieval, connectors/MCPs, skills
 
 ## Next planned
 - Tier 0 myth-busting scripts
