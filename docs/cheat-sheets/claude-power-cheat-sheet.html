@@ -63,6 +63,18 @@
   </div>
 
   <hr>
+  <h2>🚫 When NOT to use AI (know the line)</h2>
+  <p>AI is a drafting assistant, not a decision-maker. Don't use it for:</p>
+  <div class="warn">
+    <ul style="margin:0">
+      <li><strong>Final decisions about people</strong> — hiring, firing, discipline, performance ratings. It can <em>assist or summarize</em>; a human decides.</li>
+      <li><strong>Professional advice as the last word</strong> — medical, legal, or financial guidance presented as final without a qualified human's review.</li>
+      <li><strong>Anything confidential in an unapproved tool</strong> — client, regulated, or personal data goes only where your admin approved it.</li>
+    </ul>
+  </div>
+  <p><strong>Rule of thumb:</strong> if a wrong answer could harm a person, a human owns the decision. That's DTAI at the decision level.</p>
+
+  <hr>
   <h2>1. The prompt recipe — CREF</h2>
   <p>Most "bad AI answers" are really bad <em>briefs</em>. Give it four things:</p>
   <table>
@@ -204,6 +216,23 @@
   <div class="warn">🔎 Skill availability depends on your plan/setup — ask your admin or [your friend, the AI lead] to set one up.</div>
 
   <hr>
+  <h2>7a. Catch mistakes before they cost you (DTAI in practice)</h2>
+  <p>DTAI isn't only "double-check it yourself" — you can make the AI help you catch its own errors.</p>
+  <ol>
+    <li><strong>Make it admit uncertainty.</strong> Add this to any factual prompt:
+      <div class="prompt">"If you're not sure, or it's not in what I gave you, say 'I'm not sure' — don't guess."</div></li>
+    <li><strong>Have it check its own work.</strong> After it drafts something:
+      <div class="prompt">"Now review your draft against my requirements above and list anything that falls short or that you're not confident is accurate."</div></li>
+    <li><strong>Know the hallucination tells</strong> — verify <em>harder</em> when you see:
+      <ul>
+        <li>citations, links, or quotes that look oddly specific or you can't find;</li>
+        <li>numbers that don't add up or contradict the source;</li>
+        <li>confident answers about <strong>very recent events</strong> (likely past its knowledge cutoff).</li>
+      </ul></li>
+  </ol>
+  <div class="tip">This doesn't replace your review — it just surfaces the risky spots faster so your DTAI check is quicker and sharper.</div>
+
+  <hr>
   <h2>🧠 How AI "memory" works — context windows (and why it forgets)</h2>
   <p>Picture the AI's short-term memory as a <strong>whiteboard of a fixed size.</strong> Everything in your current chat — your messages, its replies, and any attached files — gets written on it. That size limit is called the <strong>context window.</strong></p>
   <ul>
@@ -272,6 +301,10 @@
   <div class="prompt">"Use [old_file] as the format/template to copy and [new_data_file] as the source of numbers. Rebuild it with the same columns and layout, add a totals row, and a '% change vs prior' column. Give me a table to paste into Excel. If a value isn't in the data, write 'not available' — don't estimate."</div>
   <p><strong>Direct it (read first, then point to the exact spot):</strong></p>
   <div class="prompt">"First read the attached [file] fully and tell me in 3 bullets what it covers — write nothing else yet. Then: look at [line/cell/section, e.g. line 67] — I want you to [copy that tone / apply that formula / match that structure] in [target], and leave everything else untouched."</div>
+  <p><strong>Force honesty (reduce made-up answers):</strong></p>
+  <div class="prompt">"Answer only from what I gave you. If it's not there or you're unsure, say 'I'm not sure' — do not guess or fill gaps."</div>
+  <p><strong>Self-check (make it catch its own misses):</strong></p>
+  <div class="prompt">"Review your draft against my requirements above. List anything that's missing, weak, or that you're not confident is accurate — then give me a corrected version."</div>
 
   <hr>
   <div class="capstone">
