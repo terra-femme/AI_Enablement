@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<!--
+  Claude Power Cheat Sheet — EMAIL-READY HTML
+  How to use: open in a browser, press Ctrl+A (select all), Ctrl+C (copy),
+  then paste into a Gmail/Outlook compose window. Styling is email-safe
+  (web-safe fonts, simple boxes/tables) so it survives the paste.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Claude Power Cheat Sheet</title>
+<style>
+  body{margin:0;background:#f0f2f7;font-family:-apple-system,"Segoe UI",Arial,Helvetica,sans-serif;
+    color:#1f2430;line-height:1.5}
+  .wrap{max-width:720px;margin:0 auto;background:#ffffff;padding:32px 34px 40px}
+  h1{font-size:26px;margin:0 0 4px;color:#16204a}
+  .subtitle{color:#5b6478;font-size:15px;margin:0 0 18px}
+  h2{font-size:19px;color:#16204a;margin:26px 0 10px;padding-bottom:6px;border-bottom:2px solid #e6e9f2}
+  h3{font-size:15px;color:#2a3358;margin:16px 0 6px}
+  p{margin:8px 0}
+  ul,ol{margin:8px 0;padding-left:22px}
+  li{margin:4px 0}
+  code{background:#eef1fb;color:#2a3358;font-family:Consolas,"Courier New",monospace;
+    font-size:90%;padding:1px 5px;border-radius:4px}
+  table{border-collapse:collapse;width:100%;margin:10px 0;font-size:14px}
+  th,td{border:1px solid #d9dee9;padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:#eef1fb;color:#16204a}
+  hr{border:0;border-top:1px solid #e6e9f2;margin:22px 0}
+  .lead{background:#f5f7fb;border-left:4px solid #6b7cc4;padding:10px 14px;margin:10px 0;border-radius:0 6px 6px 0}
+  .prompt{background:#f5f7fb;border-left:4px solid #3f66d6;padding:10px 14px;margin:8px 0;
+    border-radius:0 6px 6px 0;font-style:italic;color:#2c3552}
+  .tip{background:#eefaf3;border-left:4px solid #29b673;padding:8px 14px;margin:8px 0;border-radius:0 6px 6px 0}
+  .warn{background:#fff6e9;border-left:4px solid #e0a12e;padding:8px 14px;margin:8px 0;border-radius:0 6px 6px 0}
+  .dtai{background:#fdecec;border:2px solid #d94a4a;border-radius:8px;padding:14px 18px;margin:16px 0}
+  .dtai h2{color:#b02a2a;border:0;margin:0 0 8px;padding:0}
+  .capstone{background:#f3f0fb;border:2px solid #8a6fd0;border-radius:8px;padding:16px 18px;margin:16px 0}
+  .capstone h2{color:#5a3fa0}
+  .note{color:#5b6478;font-size:13px;font-style:italic}
+  strong{color:#16204a}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Claude Power Cheat Sheet</h1>
+  <p class="subtitle">Get exceptional results — a one-page reference for everyday work</p>
+
+  <div class="lead">
+    <strong>Mindset:</strong> you're delegating to a brilliant new colleague, not searching a database. Brief it well, check its work.<br>
+    ⚠️ Never paste anything you couldn't email to a stranger into a tool you're not sure about. Verify facts before you send.
+  </div>
+
+  <div class="dtai">
+    <h2>🛑 The #1 rule — DTAI: Don't Trust AI</h2>
+    <ul>
+      <li><strong>Fact-check every number</strong> against current, real data — AI can be confidently wrong.</li>
+      <li><strong>Always read and revise</strong> — never send raw AI output.</li>
+      <li><strong>Use your own judgment</strong> — you are the expert in the room.</li>
+      <li><strong>AI drafts; a human owns the final product.</strong> It helps you start, it does not replace you.</li>
+    </ul>
+    <p class="note">Everything below makes the AI a better assistant. DTAI keeps you the one in charge.</p>
+  </div>
+
+  <hr>
+  <h2>🚫 When NOT to use AI (know the line)</h2>
+  <p>AI is a drafting assistant, not a decision-maker. Don't use it for:</p>
+  <div class="warn">
+    <ul style="margin:0">
+      <li><strong>Final decisions about people</strong> — hiring, firing, discipline, performance ratings. It can <em>assist or summarize</em>; a human decides.</li>
+      <li><strong>Professional advice as the last word</strong> — medical, legal, or financial guidance presented as final without a qualified human's review.</li>
+      <li><strong>Anything confidential in an unapproved tool</strong> — client, regulated, or personal data goes only where your admin approved it.</li>
+    </ul>
+  </div>
+  <p><strong>Rule of thumb:</strong> if a wrong answer could harm a person, a human owns the decision. That's DTAI at the decision level.</p>
+
+  <hr>
+  <h2>1. The prompt recipe — CREF</h2>
+  <p>Most "bad AI answers" are really bad <em>briefs</em>. Give it four things:</p>
+  <table>
+    <tr><th>&nbsp;</th><th>Means</th><th>Example phrase</th></tr>
+    <tr><td><strong>C — Context</strong></td><td>the situation</td><td>"A client is upset their report is 3 days late."</td></tr>
+    <tr><td><strong>R — Role</strong></td><td>who Claude should be</td><td>"You're a calm, accountable account manager."</td></tr>
+    <tr><td><strong>E — Example</strong></td><td>your tone/sample (optional, powerful)</td><td>"Match the tone of this past email: …"</td></tr>
+    <tr><td><strong>F — Format</strong></td><td>the shape you want back</td><td>"3 short paragraphs, warm, end with a clear next step."</td></tr>
+  </table>
+  <p><strong>Before:</strong> <em>"Write an email to a client about a delay."</em> → generic.</p>
+  <p><strong>After (CREF):</strong></p>
+  <div class="prompt">"A client is upset their report is 3 days late (context). You're a calm, accountable account manager (role). Match the warm tone of the email I'm pasting below (example). Write 3 short paragraphs — acknowledge, explain briefly without excuses, give a firm new date — no jargon (format)."</div>
+  <p><strong>If the answer's off, don't restart — steer it:</strong> "shorter," "more formal," "add a deadline," "remove the apology in line 2."</p>
+
+  <hr>
+  <h2>2. Priming (set it up before you ask)</h2>
+  <p>Priming = the standing context you give <em>before</em> the task so every answer fits you.</p>
+  <ul>
+    <li><strong>Quick priming (in the message):</strong> start with role + audience + constraints.
+      <div class="prompt">"Act as our compliance reviewer. Audience is non-technical staff. Flag risks plainly, cite the policy section."</div></li>
+    <li><strong>Persistent priming (best):</strong> put it in a <strong>Project's custom instructions</strong> so you don't retype it every time (see §4).</li>
+    <li><strong>Few-shot priming:</strong> show 1–2 examples of good output. Claude mirrors patterns fast.
+      <div class="prompt">"Here are two approved subject lines we like: […]. Write five more in that style."</div></li>
+  </ul>
+
+  <hr>
+  <h2>3. Result intention (say what 'done' looks like)</h2>
+  <p>Tell it the <strong>outcome and the format</strong>, not just the topic. Be specific about length, structure, audience, and tone.</p>
+  <table>
+    <tr><th>Vague</th><th>Intentional</th></tr>
+    <tr><td>"Summarize this."</td><td>"Summarize this in 5 bullets a busy exec can read in 20 seconds."</td></tr>
+    <tr><td>"Make a plan."</td><td>"Give a 30/60/90-day plan as a table: phase, goal, owner, success metric."</td></tr>
+    <tr><td>"Improve this email."</td><td>"Tighten this to under 120 words, keep the friendly tone, no buzzwords."</td></tr>
+  </table>
+  <div class="tip"><strong>Power move:</strong> end with "Before you write, ask me 3 questions if anything is unclear." Catches wrong assumptions early.</div>
+
+  <hr>
+  <h2>3a. Voice &amp; direction — be the director (and be specific)</h2>
+  <p>Stop <em>typing a search</em>. Start <strong>directing a performance.</strong> The AI is a world-class actor who will do exactly what you describe — so describe it like an <strong>Oscar-winning Shakespearean director</strong>: set the scene, name the mood, shape the pacing. Think in <strong>vivid, concrete detail — like a page of Stephen King</strong>: specific, textured, nothing vague. The richer your direction, the closer the performance.</p>
+  <table>
+    <tr><th>Flat</th><th>Directed (with voice)</th></tr>
+    <tr><td>"Write a follow-up email."</td><td>"Open warm but brisk — a trusted advisor who respects their time. Two tight paragraphs: first, acknowledge the delay plainly, no groveling; second, a confident next step with a firm date. Land on reassurance, not apology. Tone: calm, senior, human."</td></tr>
+  </table>
+  <h3>Make it READ and UNDERSTAND before it acts</h3>
+  <p>Don't let it perform a script it hasn't studied. Direct it to read first:</p>
+  <div class="prompt">"First, read the attached report in full and tell me in 3 bullets what it covers and how it's structured. Write nothing else yet — I'll confirm before we continue."</div>
+  <p>This proves it actually understood the material before it produces anything (and catches misreads early).</p>
+  <h3>Point to the exact spot (specificity in files)</h3>
+  <p>Precise references beat "fix the part near the middle" — the AI can't guess which piece you mean. Name the location:</p>
+  <ul>
+    <li>"Look at how <strong>line 67</strong> phrases the risk disclaimer — copy that exact tone in the new section."</li>
+    <li>"In <code>Q1_Report.xlsx</code>, cell <strong>B12</strong> has the formula I want — apply that same logic to column C."</li>
+    <li>"Match the structure of the <strong>third paragraph on page 2</strong> of <code>brand_guide.pdf</code>."</li>
+    <li>"The row where <strong>Region = West</strong> looks wrong — recheck that calculation only."</li>
+    <li>"Rewrite <strong>bullet 2 under 'Risks'</strong> — leave the rest untouched."</li>
+  </ul>
+  <div class="tip"><strong>Director's toolkit:</strong> set the scene → name the tone → describe the pacing → <strong>point to the exact line/cell/section</strong> → say what 'great' looks like. Bonus: the more specific your direction, the easier it is to <strong>verify</strong> you got exactly what you asked for.</div>
+
+  <hr>
+  <h2>3b. Plan before you build — ask what it <em>thinks</em> first</h2>
+  <p>Don't let it produce the whole thing on the first swing. Make it show its <strong>plan</strong>, then agree on it. This catches a wrong direction in 20 seconds instead of after three wasted pages.</p>
+  <ul>
+    <li><strong>Ask for the approach, not the answer:</strong>
+      <div class="prompt">"Before you write anything, tell me how you'd approach this — the steps you'd take and what you need from me. Don't start yet."</div></li>
+    <li><strong>Converse and work out the kinks:</strong> correct its assumptions, fill in missing context, agree on the outline — <em>then</em> say "looks good, go ahead."</li>
+    <li><strong>Why it's imperative:</strong> AI will confidently run the wrong way if you let it. Two minutes agreeing on a plan saves rewriting the whole output — and it surfaces the questions you forgot to answer.</li>
+  </ul>
+  <p><strong>The "Plan" feature.</strong> Some Claude tools have a dedicated <strong>Plan mode</strong>: the AI researches and lays out a step-by-step plan <em>without doing the work yet</em>, and you approve it before it executes. It exists to stop the AI from charging ahead and to keep <strong>you</strong> in control. 🔎 Availability depends on the tool/plan (it's standard in the developer tool, Claude Code) — ask your admin/AI lead if it's on in your workspace. Even without the button, the habit is the same: <strong>plan → approve → execute.</strong></p>
+
+  <hr>
+  <h2>4. Project folder contents (set up a Project once, reuse forever)</h2>
+  <p>A <strong>Project</strong> = a saved workspace: <strong>custom instructions + uploaded reference files (knowledge)</strong> + its chats. Make one per recurring job.</p>
+  <p><strong>Example — a "Client Communications" Project should contain:</strong></p>
+  <ul>
+    <li><strong>Custom instructions:</strong> "You write client emails for [Company]. Tone: warm, professional, concise. Never promise dates without a placeholder for me to confirm. Avoid jargon."</li>
+    <li><strong>Knowledge files (upload):</strong>
+      <ul>
+        <li>Brand/voice guide (1–2 pages)</li>
+        <li>3–5 approved past emails (good examples)</li>
+        <li>Service descriptions / FAQ</li>
+        <li>The do-not-say list (legal/compliance phrases to avoid)</li>
+      </ul></li>
+    <li><strong>Result:</strong> every chat in that Project already "knows" your voice and rules — no re-priming.</li>
+  </ul>
+  <div class="warn">Keep knowledge files <strong>small, clean, and current.</strong> Outdated or bloated files = worse answers. Remove drafts you don't want it to imitate.</div>
+
+  <hr>
+  <h2>5. Retrieval (make it use <em>your</em> documents, not its memory)</h2>
+  <p>"Retrieval" = Claude pulling answers from files/data you give it, instead of guessing from training.</p>
+  <p><strong>How to do it:</strong></p>
+  <ul>
+    <li><strong>Attach a file</strong> to a message, or add it to a <strong>Project's knowledge</strong>, then ask about it.</li>
+    <li><strong>Ask in a way that forces retrieval:</strong>
+      <div class="prompt">"Using only the attached policy, answer: what's our refund window? Quote the exact sentence and section."</div></li>
+    <li><strong>Always make it cite:</strong> "Quote the source line." If it can't quote it, it may be guessing — verify.</li>
+  </ul>
+  <p><strong>Example:</strong> upload the 12-page vendor contract →</p>
+  <div class="prompt">"From the attached contract only: list every deadline and who's responsible, as a table. If something isn't stated, write 'not specified' — don't infer."</div>
+
+  <h3>5a. Working with attachments — refer to them clearly</h3>
+  <p><strong>Attach vs. paste:</strong> attach <strong>files</strong> (PDF, Word, Excel, slides, images/screenshots). <strong>Paste</strong> short snippets of text directly. Don't paste a huge document as text when you can attach the file.</p>
+  <p><strong>Refer to attachments by name — especially with more than one.</strong> Vague references ("the document") confuse Claude when several files are attached.</p>
+  <ul>
+    <li>One file: <em>"In the attached file, …"</em> is fine.</li>
+    <li><strong>Multiple files: name each one.</strong>
+      <div class="prompt">"Compare <strong>Q1_Report.pdf</strong> and <strong>Q2_Report.pdf</strong> — list what changed in revenue. Use <strong>brand_guide.pdf</strong> for the tone of your summary."</div></li>
+    <li><strong>Point to the part you mean:</strong> "see page 3," "the table under 'Pricing'," "the second screenshot."</li>
+  </ul>
+  <p><strong>Tell Claude what to <em>do</em> with each attachment</strong> (its role):</p>
+  <div class="prompt">"Use <strong>contract.pdf</strong> as the source of facts, <strong>email_examples.docx</strong> as the tone to copy, and <strong>checklist.xlsx</strong> as the format to fill in."</div>
+  <p><strong>Images &amp; screenshots:</strong> you can attach them and ask Claude to read/describe/extract.</p>
+  <div class="prompt">"From the attached screenshot, type out the error message exactly and explain it in plain English."</div>
+  <p><strong>Good habits:</strong></p>
+  <ul>
+    <li><strong>Name files clearly before uploading</strong> (<code>Acme_MSA_2026.pdf</code>, not <code>scan_0012.pdf</code>) — clear names = clearer references.</li>
+    <li><strong>State scope:</strong> "using only the attached files" stops it from mixing in guesses.</li>
+    <li><strong>Confirm it loaded:</strong> if unsure, ask <em>"List the files you can see and one line on each"</em> before the real task.</li>
+    <li>⚠️ Same data rule applies to attachments: <strong>don't upload confidential/regulated files</strong> into a tool not approved for them.</li>
+  </ul>
+
+  <hr>
+  <h2>6. MCPs / Connectors (give Claude access to live tools &amp; data)</h2>
+  <p><strong>ELI5: USB-C for AI</strong> — a plug that lets Claude reach outside tools (email, calendar, drive, etc.).</p>
+  <ul>
+    <li>In <strong>Claude Enterprise (web)</strong> these are <strong>Connectors / Integrations</strong>, turned on by your <strong>admin</strong> (e.g., Google Drive, Gmail, Calendar).</li>
+    <li>Once enabled, just ask naturally:
+      <div class="prompt">"Find the contract in our Drive folder 'Vendors 2026' and summarize the payment terms."<br>"Draft a reply to the latest email from [name] declining politely, and save it as a draft."</div></li>
+    <li>⚠️ Connectors expand what AI can touch → <strong>a security decision.</strong> Use only what your admin enabled; never connect personal accounts for work.</li>
+  </ul>
+  <div class="warn">🔎 Ask your admin which connectors are turned on for your team before relying on them.</div>
+
+  <hr>
+  <h2>7. Skills (saved playbooks for repeat jobs)</h2>
+  <p><strong>ELI5: a recipe Claude pulls off the shelf</strong> — a packaged set of instructions/steps for a specific task, so results stay consistent across the team.</p>
+  <ul>
+    <li>Use a skill when you do the <strong>same multi-step job repeatedly</strong> (e.g., "turn meeting notes into our standard summary format").</li>
+    <li>For your team: capture your best repeatable workflow once, save it as a skill/Project template, and everyone gets the same quality.</li>
+  </ul>
+  <div class="warn">🔎 Skill availability depends on your plan/setup — ask your admin or [your friend, the AI lead] to set one up.</div>
+
+  <hr>
+  <h2>7a. Catch mistakes before they cost you (DTAI in practice)</h2>
+  <p>DTAI isn't only "double-check it yourself" — you can make the AI help you catch its own errors.</p>
+  <ol>
+    <li><strong>Make it admit uncertainty.</strong> Add this to any factual prompt:
+      <div class="prompt">"If you're not sure, or it's not in what I gave you, say 'I'm not sure' — don't guess."</div></li>
+    <li><strong>Have it check its own work.</strong> After it drafts something:
+      <div class="prompt">"Now review your draft against my requirements above and list anything that falls short or that you're not confident is accurate."</div></li>
+    <li><strong>Know the hallucination tells</strong> — verify <em>harder</em> when you see:
+      <ul>
+        <li>citations, links, or quotes that look oddly specific or you can't find;</li>
+        <li>numbers that don't add up or contradict the source;</li>
+        <li>confident answers about <strong>very recent events</strong> (likely past its knowledge cutoff).</li>
+      </ul></li>
+  </ol>
+  <div class="tip">This doesn't replace your review — it just surfaces the risky spots faster so your DTAI check is quicker and sharper.</div>
+
+  <hr>
+  <h2>🧠 How AI "memory" works — context windows (and why it forgets)</h2>
+  <p>Picture the AI's short-term memory as a <strong>whiteboard of a fixed size.</strong> Everything in your current chat — your messages, its replies, and any attached files — gets written on it. That size limit is called the <strong>context window.</strong></p>
+  <ul>
+    <li><strong>While there's room:</strong> it "remembers" everything earlier in the chat.</li>
+    <li><strong>When the whiteboard fills up:</strong> the oldest notes get erased or condensed to make room — so in a long conversation it can <strong>forget details from the beginning</strong> or seem to "lose the plot."</li>
+    <li><strong>Each new chat starts on a blank whiteboard</strong> — it generally doesn't remember your previous chats (unless the info lives in a <strong>Project's knowledge</strong>, you paste it back in, or your tool has a cross-chat memory feature 🔎).</li>
+  </ul>
+  <p><strong>What to do about it:</strong></p>
+  <ol>
+    <li><strong>One topic per chat.</strong> Start a fresh chat for a new task — cleaner, less drift.</li>
+    <li><strong>Put durable info in a Project</strong> (custom instructions + knowledge files) so it's always available instead of trapped in one chat.</li>
+    <li><strong>Re-anchor long chats:</strong> paste the key facts again, or ask <em>"summarize what we've agreed so far"</em> and carry that summary forward.</li>
+    <li><strong>Watch for the tell:</strong> if it turns vague or contradicts earlier points, the window is likely full — start fresh and paste in the summary.</li>
+    <li><strong>Don't over-stuff:</strong> attaching huge files also eats the window — attach only what's relevant.</li>
+  </ol>
+
+  <hr>
+  <h2>8. The 6 habits of people who get great results</h2>
+  <ol>
+    <li><strong>Brief it like a person</strong> (CREF) — context beats cleverness.</li>
+    <li><strong>Prime once</strong> in a Project — stop retyping your setup.</li>
+    <li><strong>State the finished shape</strong> — length, format, audience.</li>
+    <li><strong>Feed it your documents</strong> and make it <strong>quote</strong> them.</li>
+    <li><strong>Iterate, don't restart</strong> — "fix this part."</li>
+    <li><strong>DTAI — Don't Trust AI</strong> — fact-check numbers, read &amp; revise, use your judgment; you own the final product. (Plus the stranger test: protect the data.)</li>
+  </ol>
+
+  <hr>
+  <h2>9. Worked example — "make this quarter's report like last quarter's" (Excel)</h2>
+  <p>A full walk-through that ties every habit together. <strong>Goal:</strong> recreate a familiar Excel report with new numbers, in the same format — without rebuilding it by hand.</p>
+  <p><strong>The situation:</strong> You have last quarter's polished sales report (<code>Q1_Sales_Report.xlsx</code>) and this quarter's raw export (<code>Q2_raw_data.xlsx</code>). You want Q2 to look and calculate exactly like Q1.</p>
+  <h3>Step 1 — Prime (tell it who to be + the goal)</h3>
+  <div class="prompt">"You're a meticulous sales analyst. I need to produce our quarterly sales report. I'll give you last quarter's finished report as the template/format to copy, and this quarter's raw data to fill it with. Match the previous format exactly."</div>
+  <h3>Step 2 — Upload / attach the right files</h3>
+  <ul>
+    <li><code>Q1_Sales_Report.xlsx</code> → the <strong>format example</strong> (what "done" looks like)</li>
+    <li><code>Q2_raw_data.xlsx</code> → the <strong>source of the new numbers</strong></li>
+  </ul>
+  <div class="tip">💡 Attach the real <strong>files</strong> (don't paste thousands of rows as text). Name them clearly <em>before</em> uploading.</div>
+  <h3>Step 3 — Reference each attachment by name and give it a role</h3>
+  <div class="prompt">"Use <strong>Q1_Sales_Report.xlsx</strong> as the layout, column order, and formatting to copy. Pull all the actual numbers from <strong>Q2_raw_data.xlsx</strong>. Don't mix Q1's numbers into the Q2 report."</div>
+  <h3>Step 4 — State the intended result precisely</h3>
+  <div class="prompt">"Build the Q2 report with the same columns and sheet layout as Q1: Region, Units Sold, Revenue, % of Total, and a % change vs Q1 column. Include a totals row at the bottom. Sort by Revenue, highest first. Give me a clean table I can paste into Excel, and list any Q2 regions that didn't appear in Q1. If a number isn't in the raw data, write 'not available' — don't estimate."</div>
+  <h3>Step 5 — What you get &amp; how to use it</h3>
+  <ul>
+    <li>Claude returns the <strong>finished table</strong> (with the calculations done) to paste straight into your sheet.</li>
+    <li>🔎 If <strong>file creation / the analysis tool</strong> is enabled in your workspace, you can also ask: <em>"Give me this as a downloadable .xlsx formatted like Q1."</em> (Availability depends on your plan — ask your admin.)</li>
+  </ul>
+  <h3>Step 6 — Iterate, then VERIFY</h3>
+  <ul>
+    <li>Iterate, don't restart: <em>"Add a grand-total row,"</em> <em>"format Revenue as currency,"</em> <em>"the % change should be (Q2−Q1)/Q1."</em></li>
+    <li>⚠️ <strong>Always spot-check the math</strong> on any financial report before sending it — pick 2–3 rows and confirm the totals and % changes by hand. You own the numbers.</li>
+    <li>⚠️ <strong>Data rule:</strong> only upload these files if the report data is approved for your AI tool (no regulated/confidential data in an unapproved tool).</li>
+  </ul>
+  <div class="tip"><strong>The pattern to remember:</strong> Prime the role → attach format + data → name each file's job → specify the exact output → iterate → verify the numbers. That sequence works for slides, letters, and dashboards too — not just Excel.</div>
+
+  <hr>
+  <h2>Copy-paste starters</h2>
+  <p><strong>General task:</strong></p>
+  <div class="prompt">"Context: ___. You are ___ (role). Audience: ___. Give me ___ (format/length). Tone: ___. Before writing, ask me up to 3 questions if anything's unclear."</div>
+  <p><strong>Document Q&amp;A:</strong></p>
+  <div class="prompt">"Using only the attached file, answer ___. Quote the exact source line. If it's not in the document, say 'not specified.'"</div>
+  <p><strong>Make it better:</strong></p>
+  <div class="prompt">"Rewrite the above to be [shorter/warmer/more formal]. Keep [X]. Remove [Y]. Under [N] words."</div>
+  <p><strong>Report like a past one (Excel/docs):</strong></p>
+  <div class="prompt">"Use [old_file] as the format/template to copy and [new_data_file] as the source of numbers. Rebuild it with the same columns and layout, add a totals row, and a '% change vs prior' column. Give me a table to paste into Excel. If a value isn't in the data, write 'not available' — don't estimate."</div>
+  <p><strong>Direct it (read first, then point to the exact spot):</strong></p>
+  <div class="prompt">"First read the attached [file] fully and tell me in 3 bullets what it covers — write nothing else yet. Then: look at [line/cell/section, e.g. line 67] — I want you to [copy that tone / apply that formula / match that structure] in [target], and leave everything else untouched."</div>
+  <p><strong>Force honesty (reduce made-up answers):</strong></p>
+  <div class="prompt">"Answer only from what I gave you. If it's not there or you're unsure, say 'I'm not sure' — do not guess or fill gaps."</div>
+  <p><strong>Self-check (make it catch its own misses):</strong></p>
+  <div class="prompt">"Review your draft against my requirements above. List anything that's missing, weak, or that you're not confident is accurate — then give me a corrected version."</div>
+
+  <hr>
+  <div class="capstone">
+    <h2>🏁 The capstone — a perfect prompt (Director of Sales)</h2>
+    <p>Everything on this page, in one real moment.</p>
+    <p><strong>The scene.</strong> It's 9:10 Monday, the last week of Q2. Your VP just messaged: <em>"Need a Q2 readout for the 2pm leadership meeting."</em> You have your CRM export (<code>Q2_pipeline_export.xlsx</code>) and last quarter's board deck (<code>Q1_board_readout.pptx</code>).</p>
+    <p><strong>The problem.</strong> Your team of 8 reps hit <strong>82% of target</strong> — a miss. You need to explain <em>why</em>, what's recoverable in Q3, and a concrete recovery plan — in under an hour, formatted the way leadership already expects. Building it by hand would eat your whole morning.</p>
+    <p><strong>How AI helps.</strong> It reads the data, drafts the narrative and a recovery-plan table in the board's format, and hands you a first draft to sharpen. <em>You</em> verify the numbers and supply the judgment (<strong>DTAI</strong>).</p>
+    <p><strong>The perfect prompt</strong> (notice how it stacks every technique):</p>
+    <div class="prompt">"You're my sharpest sales analyst and I'm the Director of Sales prepping a leadership readout — be concise, honest, and boardroom-calm. First, read both attached files and tell me in 3 bullets what each contains — write nothing else until I confirm.<br><br>Roles: use <strong>Q2_pipeline_export.xlsx</strong> as the source of all numbers, and <strong>Q1_board_readout.pptx</strong> as the exact format, tone, and slide structure to match.<br><br>Then draft a Q2 readout with: (1) a 3-sentence honest summary of why we hit 82% of target — no spin, no blame; (2) a table of results by rep and by region with % change vs Q1; (3) a Q3 recovery plan as a table — action, owner, expected impact, deadline. Look at how slide 4 of the Q1 deck frames the 'Risks &amp; Actions' section and mirror that structure. Where a number isn't in the export, write 'not available' — never estimate. Keep it to one page I can drop into the deck."</div>
+    <p>Then: iterate (<em>"tighten the summary,"</em> <em>"make the recovery table more specific"</em>), and <strong>fact-check every figure against the export before it goes anywhere.</strong></p>
+    <p><strong>🎙️ Voice it, don't type it.</strong> A brief this detailed is ~150 words — that's <strong>~40 seconds spoken vs. several minutes typed.</strong> Use the voice/dictation button and just <em>talk</em> it through like you're briefing your analyst across the desk. Speaking naturally also tends to produce richer, more specific direction than typing — you say the details you'd skip with your thumbs. (Then glance over the transcribed text for any misheard names/numbers before you send — <strong>DTAI</strong> applies to your own dictation too.)</p>
+    <div class="tip"><strong>This is the whole cheat sheet in one prompt:</strong> primed role → read &amp; understand first → files named with roles → precise result intention → directed with voice → pointed to the exact slide → 'don't estimate' guardrail → iterate → verify. Master this shape and you can direct AI through almost any business task.</div>
+  </div>
+
+</div>
+</body>
+</html>

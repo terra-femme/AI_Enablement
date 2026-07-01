@@ -14,6 +14,16 @@
 
 ---
 
+## 🚫 When NOT to use AI (know the line)
+AI is a drafting assistant, not a decision-maker. Don't use it for:
+- **Final decisions about people** — hiring, firing, discipline, performance ratings. It can *assist or summarize*; a human decides.
+- **Professional advice as the last word** — medical, legal, or financial guidance presented as final without a qualified human's review.
+- **Anything confidential in an unapproved tool** — client, regulated, or personal data goes only where your admin approved it.
+
+> Rule of thumb: **if a wrong answer could harm a person, a human owns the decision.** That's DTAI at the decision level.
+
+---
+
 ## 1. The prompt recipe — **CREF**
 Most "bad AI answers" are really bad *briefs*. Give it four things:
 
@@ -164,6 +174,21 @@ A **Project** = a saved workspace: **custom instructions + uploaded reference fi
 
 ---
 
+## 7a. Catch mistakes before they cost you (DTAI in practice)
+DTAI isn't only "double-check it yourself" — you can make the AI help you catch its own errors.
+1. **Make it admit uncertainty.** Add this to any factual prompt:
+   > "If you're not sure, or it's not in what I gave you, say 'I'm not sure' — don't guess."
+2. **Have it check its own work.** After it drafts something:
+   > "Now review your draft against my requirements above and list anything that falls short or that you're not confident is accurate."
+3. **Know the hallucination tells** — verify *harder* when you see:
+   - citations, links, or quotes that look oddly specific or you can't find;
+   - numbers that don't add up or contradict the source;
+   - confident answers about **very recent events** (likely past its knowledge cutoff).
+
+> This doesn't replace your review — it just surfaces the risky spots faster so your DTAI check is quicker and sharper.
+
+---
+
 ## 🧠 How AI "memory" works — context windows (and why it forgets)
 Picture the AI's short-term memory as a **whiteboard of a fixed size.** Everything in your current chat — your messages, its replies, and any attached files — gets written on it. That size limit is called the **context window.**
 
@@ -241,6 +266,12 @@ Spell out structure, calculations, and format:
 
 **Direct it (read first, then point to the exact spot):**
 > "First read the attached **[file]** fully and tell me in 3 bullets what it covers — write nothing else yet. Then: look at **[line/cell/section, e.g. line 67]** — I want you to [copy that tone / apply that formula / match that structure] in **[target]**, and leave everything else untouched."
+
+**Force honesty (reduce made-up answers):**
+> "Answer only from what I gave you. If it's not there or you're unsure, say 'I'm not sure' — do not guess or fill gaps."
+
+**Self-check (make it catch its own misses):**
+> "Review your draft against my requirements above. List anything that's missing, weak, or that you're not confident is accurate — then give me a corrected version."
 
 ---
 
