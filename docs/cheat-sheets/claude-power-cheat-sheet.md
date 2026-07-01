@@ -4,6 +4,14 @@
 > Mindset: **you're delegating to a brilliant new colleague, not searching a database.** Brief it well, check its work.
 > ⚠️ Never paste anything you couldn't email to a stranger into a tool you're not sure about. Verify facts before you send.
 
+## 🛑 The #1 rule — **DTAI: Don't Trust AI**
+> - **Fact-check every number** against current, real data — AI can be confidently wrong.
+> - **Always read and revise** — never send raw AI output.
+> - **Use your own judgment** — you are the expert in the room.
+> - **AI drafts; a human owns the final product.** It helps you start, it does not replace you.
+
+*Everything below makes the AI a better assistant. DTAI keeps you the one in charge.*
+
 ---
 
 ## 1. The prompt recipe — **CREF**
@@ -45,6 +53,44 @@ Tell it the **outcome and the format**, not just the topic. Be specific about le
 | "Improve this email." | "Tighten this to under 120 words, keep the friendly tone, no buzzwords." |
 
 > Power move: end with **"Before you write, ask me 3 questions if anything is unclear."** Catches wrong assumptions early.
+
+---
+
+## 3a. Voice & direction — be the director (and be specific)
+Stop *typing a search*. Start **directing a performance.** The AI is a world-class actor who will do exactly what you describe — so describe it like an **Oscar-winning Shakespearean director**: set the scene, name the mood, shape the pacing. Think in **vivid, concrete detail — like a page of Stephen King**: specific, textured, nothing vague. The richer your direction, the closer the performance.
+
+**Flat vs. directed:**
+| Flat | Directed (with voice) |
+|---|---|
+| "Write a follow-up email." | "Open warm but brisk — a trusted advisor who respects their time. Two tight paragraphs: first, acknowledge the delay plainly, no groveling; second, a confident next step with a firm date. Land on reassurance, not apology. Tone: calm, senior, human." |
+
+### Make it READ and UNDERSTAND before it acts
+Don't let it perform a script it hasn't studied. Direct it to read first:
+> "First, **read the attached report in full** and tell me in 3 bullets what it covers and how it's structured. Write nothing else yet — I'll confirm before we continue."
+
+This proves it actually understood the material before it produces anything (and catches misreads early).
+
+### Point to the *exact* spot (specificity in files)
+Precise references beat "fix the part near the middle" — the AI can't guess which piece you mean. Name the location:
+- "Look at how **line 67** phrases the risk disclaimer — copy that exact tone in the new section."
+- "In **Q1_Report.xlsx**, cell **B12** has the formula I want — apply that same logic to column C."
+- "Match the structure of the **third paragraph on page 2** of **brand_guide.pdf**."
+- "The row where **Region = West** looks wrong — recheck that calculation only."
+- "Rewrite **bullet 2 under 'Risks'** — leave the rest untouched."
+
+> **Director's toolkit:** set the scene → name the tone → describe the pacing → **point to the exact line/cell/section** → say what 'great' looks like. Bonus: the more specific your direction, the easier it is to **verify** you got exactly what you asked for.
+
+---
+
+## 3b. Plan before you build — ask what it *thinks* first
+Don't let it produce the whole thing on the first swing. Make it show its **plan**, then agree on it. This catches a wrong direction in 20 seconds instead of after three wasted pages.
+
+- **Ask for the approach, not the answer:**
+  > "Before you write anything, tell me how you'd approach this — the steps you'd take and what you need from me. Don't start yet."
+- **Converse and work out the kinks:** correct its assumptions, fill in missing context, agree on the outline — *then* say "looks good, go ahead."
+- **Why it's imperative:** AI will confidently run the wrong way if you let it. Two minutes agreeing on a plan saves rewriting the whole output — and it surfaces the questions you forgot to answer.
+
+**The "Plan" feature.** Some Claude tools have a dedicated **Plan mode**: the AI researches and lays out a step-by-step plan *without doing the work yet*, and you approve it before it executes. It exists to stop the AI from charging ahead and to keep **you** in control of the direction. 🔎 Availability depends on the tool/plan (it's standard in the developer tool, Claude Code) — ask your admin/AI lead if it's on in your workspace. Even without the button, the habit is the same: **plan → approve → execute.**
 
 ---
 
@@ -118,13 +164,29 @@ A **Project** = a saved workspace: **custom instructions + uploaded reference fi
 
 ---
 
+## 🧠 How AI "memory" works — context windows (and why it forgets)
+Picture the AI's short-term memory as a **whiteboard of a fixed size.** Everything in your current chat — your messages, its replies, and any attached files — gets written on it. That size limit is called the **context window.**
+
+- **While there's room:** it "remembers" everything earlier in the chat.
+- **When the whiteboard fills up:** the oldest notes get erased or condensed to make room — so in a long conversation it can **forget details from the beginning** or seem to "lose the plot."
+- **Each new chat starts on a blank whiteboard** — it generally doesn't remember your previous chats (unless the info lives in a **Project's knowledge**, you paste it back in, or your tool has a cross-chat memory feature 🔎).
+
+**What to do about it:**
+1. **One topic per chat.** Start a fresh chat for a new task — cleaner, less drift.
+2. **Put durable info in a Project** (custom instructions + knowledge files) so it's always available instead of trapped in one chat.
+3. **Re-anchor long chats:** paste the key facts again, or ask *"summarize what we've agreed so far"* and carry that summary forward.
+4. **Watch for the tell:** if it turns vague or contradicts earlier points, the window is likely full — start fresh and paste in the summary.
+5. **Don't over-stuff:** attaching huge files also eats the window — attach only what's relevant.
+
+---
+
 ## 8. The 6 habits of people who get great results
 1. **Brief it like a person** (CREF) — context beats cleverness.
 2. **Prime once** in a Project — stop retyping your setup.
 3. **State the finished shape** — length, format, audience.
 4. **Feed it your documents** and make it **quote** them.
 5. **Iterate, don't restart** — "fix this part."
-6. **Verify + stranger test** — you own what you send; protect the data.
+6. **DTAI — Don't Trust AI** — fact-check numbers, read & revise, use your judgment; you own the final product. (Plus the stranger test: protect the data.)
 
 ---
 
@@ -176,3 +238,28 @@ Spell out structure, calculations, and format:
 
 **Report like a past one (Excel/docs):**
 > "Use **[old_file]** as the format/template to copy and **[new_data_file]** as the source of numbers. Rebuild it with the same columns and layout, add a totals row, and a '% change vs prior' column. Give me a table to paste into Excel. If a value isn't in the data, write 'not available' — don't estimate."
+
+**Direct it (read first, then point to the exact spot):**
+> "First read the attached **[file]** fully and tell me in 3 bullets what it covers — write nothing else yet. Then: look at **[line/cell/section, e.g. line 67]** — I want you to [copy that tone / apply that formula / match that structure] in **[target]**, and leave everything else untouched."
+
+---
+
+## 🏁 The capstone — a perfect prompt (Director of Sales)
+Everything on this page, in one real moment.
+
+**The scene.** It's 9:10 Monday, the last week of Q2. Your VP just messaged: *"Need a Q2 readout for the 2pm leadership meeting."* You have your CRM export (`Q2_pipeline_export.xlsx`) and last quarter's board deck (`Q1_board_readout.pptx`).
+
+**The problem.** Your team of 8 reps hit **82% of target** — a miss. You need to explain *why*, what's recoverable in Q3, and a concrete recovery plan — in under an hour, formatted the way leadership already expects. Building it by hand would eat your whole morning.
+
+**How AI helps.** It reads the data, drafts the narrative and a recovery-plan table in the board's format, and hands you a first draft to sharpen. *You* verify the numbers and supply the judgment (**DTAI**).
+
+**The perfect prompt** (notice how it stacks every technique):
+> *"You're my sharpest sales analyst and I'm the Director of Sales prepping a leadership readout — be concise, honest, and boardroom-calm. **First, read both attached files and tell me in 3 bullets what each contains — write nothing else until I confirm.**
+> Roles: use **Q2_pipeline_export.xlsx** as the source of all numbers, and **Q1_board_readout.pptx** as the exact format, tone, and slide structure to match.
+> Then draft a Q2 readout with: (1) a 3-sentence honest summary of why we hit **82% of target** — no spin, no blame; (2) a table of results by rep and by region with **% change vs Q1**; (3) a Q3 recovery plan as a table — action, owner, expected impact, deadline. **Look at how slide 4 of the Q1 deck frames the 'Risks & Actions' section and mirror that structure.** Where a number isn't in the export, write 'not available' — never estimate. Keep it to one page I can drop into the deck."*
+
+Then: iterate (*"tighten the summary,"* *"make the recovery table more specific"*), and **fact-check every figure against the export before it goes anywhere.**
+
+**🎙️ Voice it, don't type it.** A brief this detailed is ~150 words — that's **~40 seconds spoken vs. several minutes typed.** Use the voice/dictation button and just *talk* it through like you're briefing your analyst across the desk. Speaking naturally also tends to produce richer, more specific direction than typing — you say the details you'd skip with your thumbs. (Then glance over the transcribed text for any misheard names/numbers before you send — **DTAI** applies to your own dictation too.)
+
+> **This is the whole cheat sheet in one prompt:** primed role → read & understand first → files named with roles → precise result intention → directed with voice → pointed to the exact slide → 'don't estimate' guardrail → iterate → verify. Master this shape and you can direct AI through almost any business task.
