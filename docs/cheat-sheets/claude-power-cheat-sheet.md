@@ -128,6 +128,42 @@ A **Project** = a saved workspace: **custom instructions + uploaded reference fi
 
 ---
 
+## 9. Worked example — "make this quarter's report like last quarter's" (Excel)
+A full walk-through that ties every habit together. **Goal:** recreate a familiar Excel report with new numbers, in the same format — without rebuilding it by hand.
+
+**The situation:** You have last quarter's polished sales report (`Q1_Sales_Report.xlsx`) and this quarter's raw export (`Q2_raw_data.xlsx`). You want Q2 to look and calculate exactly like Q1.
+
+### Step 1 — Prime (tell it who to be + the goal)
+Set the role and intent *before* the task:
+> "You're a meticulous sales analyst. I need to produce our quarterly sales report. I'll give you last quarter's finished report as the **template/format to copy**, and this quarter's **raw data** to fill it with. Match the previous format exactly."
+
+### Step 2 — Upload / attach the right files
+Attach **both**:
+- `Q1_Sales_Report.xlsx` → the **format example** (what "done" looks like)
+- `Q2_raw_data.xlsx` → the **source of the new numbers**
+> 💡 Attach the real **files** (don't paste thousands of rows as text). Name them clearly *before* uploading.
+
+### Step 3 — Reference each attachment by name **and give it a role**
+This is the key move — say which file does what:
+> "Use **Q1_Sales_Report.xlsx** as the layout, column order, and formatting to copy. Pull all the actual numbers from **Q2_raw_data.xlsx**. Don't mix Q1's numbers into the Q2 report."
+
+### Step 4 — State the intended result precisely
+Spell out structure, calculations, and format:
+> "Build the Q2 report with the **same columns and sheet layout as Q1**: Region, Units Sold, Revenue, % of Total, and a **% change vs Q1** column. Include a **totals row** at the bottom. Sort by Revenue, highest first. Give me a clean table I can paste into Excel, and list any Q2 regions that didn't appear in Q1. If a number isn't in the raw data, write 'not available' — don't estimate."
+
+### Step 5 — What you get & how to use it
+- Claude returns the **finished table** (with the calculations done) to paste straight into your sheet.
+- 🔎 If **file creation / the analysis tool** is enabled in your workspace, you can also ask: *"Give me this as a downloadable .xlsx formatted like Q1."* (Availability depends on your plan — ask your admin.)
+
+### Step 6 — Iterate, then VERIFY
+- Iterate, don't restart: *"Add a grand-total row,"* *"format Revenue as currency,"* *"the % change should be (Q2−Q1)/Q1."*
+- ⚠️ **Always spot-check the math** on any financial report before sending it — pick 2–3 rows and confirm the totals and % changes by hand. You own the numbers.
+- ⚠️ **Data rule:** only upload these files if the report data is approved for your AI tool (no regulated/confidential data in an unapproved tool).
+
+> **The pattern to remember:** *Prime the role → attach format + data → name each file's job → specify the exact output → iterate → verify the numbers.* That sequence works for slides, letters, and dashboards too — not just Excel.
+
+---
+
 ## Copy-paste starters
 **General task:**
 > "Context: ___. You are ___ (role). Audience: ___. Give me ___ (format/length). Tone: ___. Before writing, ask me up to 3 questions if anything's unclear."
@@ -137,3 +173,6 @@ A **Project** = a saved workspace: **custom instructions + uploaded reference fi
 
 **Make it better:**
 > "Rewrite the above to be [shorter/warmer/more formal]. Keep [X]. Remove [Y]. Under [N] words."
+
+**Report like a past one (Excel/docs):**
+> "Use **[old_file]** as the format/template to copy and **[new_data_file]** as the source of numbers. Rebuild it with the same columns and layout, add a totals row, and a '% change vs prior' column. Give me a table to paste into Excel. If a value isn't in the data, write 'not available' — don't estimate."
