@@ -4,6 +4,14 @@
 > Mindset: **you're delegating to a brilliant new colleague, not searching a database.** Brief it well, check its work.
 > ⚠️ Never paste anything you couldn't email to a stranger into a tool you're not sure about. Verify facts before you send.
 
+## 🛑 The #1 rule — **DTAI: Don't Trust AI**
+> - **Fact-check every number** against current, real data — AI can be confidently wrong.
+> - **Always read and revise** — never send raw AI output.
+> - **Use your own judgment** — you are the expert in the room.
+> - **AI drafts; a human owns the final product.** It helps you start, it does not replace you.
+
+*Everything below makes the AI a better assistant. DTAI keeps you the one in charge.*
+
 ---
 
 ## 1. The prompt recipe — **CREF**
@@ -150,7 +158,7 @@ A **Project** = a saved workspace: **custom instructions + uploaded reference fi
 3. **State the finished shape** — length, format, audience.
 4. **Feed it your documents** and make it **quote** them.
 5. **Iterate, don't restart** — "fix this part."
-6. **Verify + stranger test** — you own what you send; protect the data.
+6. **DTAI — Don't Trust AI** — fact-check numbers, read & revise, use your judgment; you own the final product. (Plus the stranger test: protect the data.)
 
 ---
 
