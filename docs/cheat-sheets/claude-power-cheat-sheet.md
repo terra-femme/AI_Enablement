@@ -48,6 +48,32 @@ Tell it the **outcome and the format**, not just the topic. Be specific about le
 
 ---
 
+## 3a. Voice & direction — be the director (and be specific)
+Stop *typing a search*. Start **directing a performance.** The AI is a world-class actor who will do exactly what you describe — so describe it like an **Oscar-winning Shakespearean director**: set the scene, name the mood, shape the pacing. Think in **vivid, concrete detail — like a page of Stephen King**: specific, textured, nothing vague. The richer your direction, the closer the performance.
+
+**Flat vs. directed:**
+| Flat | Directed (with voice) |
+|---|---|
+| "Write a follow-up email." | "Open warm but brisk — a trusted advisor who respects their time. Two tight paragraphs: first, acknowledge the delay plainly, no groveling; second, a confident next step with a firm date. Land on reassurance, not apology. Tone: calm, senior, human." |
+
+### Make it READ and UNDERSTAND before it acts
+Don't let it perform a script it hasn't studied. Direct it to read first:
+> "First, **read the attached report in full** and tell me in 3 bullets what it covers and how it's structured. Write nothing else yet — I'll confirm before we continue."
+
+This proves it actually understood the material before it produces anything (and catches misreads early).
+
+### Point to the *exact* spot (specificity in files)
+Precise references beat "fix the part near the middle" — the AI can't guess which piece you mean. Name the location:
+- "Look at how **line 67** phrases the risk disclaimer — copy that exact tone in the new section."
+- "In **Q1_Report.xlsx**, cell **B12** has the formula I want — apply that same logic to column C."
+- "Match the structure of the **third paragraph on page 2** of **brand_guide.pdf**."
+- "The row where **Region = West** looks wrong — recheck that calculation only."
+- "Rewrite **bullet 2 under 'Risks'** — leave the rest untouched."
+
+> **Director's toolkit:** set the scene → name the tone → describe the pacing → **point to the exact line/cell/section** → say what 'great' looks like. Bonus: the more specific your direction, the easier it is to **verify** you got exactly what you asked for.
+
+---
+
 ## 4. Project folder contents (set up a Project once, reuse forever)
 A **Project** = a saved workspace: **custom instructions + uploaded reference files (knowledge)** + its chats. Make one per recurring job.
 
@@ -176,3 +202,6 @@ Spell out structure, calculations, and format:
 
 **Report like a past one (Excel/docs):**
 > "Use **[old_file]** as the format/template to copy and **[new_data_file]** as the source of numbers. Rebuild it with the same columns and layout, add a totals row, and a '% change vs prior' column. Give me a table to paste into Excel. If a value isn't in the data, write 'not available' — don't estimate."
+
+**Direct it (read first, then point to the exact spot):**
+> "First read the attached **[file]** fully and tell me in 3 bullets what it covers — write nothing else yet. Then: look at **[line/cell/section, e.g. line 67]** — I want you to [copy that tone / apply that formula / match that structure] in **[target]**, and leave everything else untouched."
