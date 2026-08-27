@@ -78,18 +78,38 @@ The risk-based structure is the part worth teaching, because it's stable even as
 
 Note the asymmetry that trips people up: **transparency obligations are live right now**, while the scarier-sounding high-risk regime is not yet. The obligation most organizations actually have today is the boring one — *tell people it's AI*.
 
-### United States
+### United States — verified 2026-08-26
 
-No single federal AI statute. Instead:
+No single federal AI statute. Instead, three layers:
 
-- **Sector regulators applying existing law** — FTC on deceptive claims, EEOC on hiring discrimination, financial regulators on their firms. "The AI did it" has never been accepted as a defence.
-- **State law**, which is where the real movement is — Colorado's AI Act, Illinois BIPA for biometrics, NYC Local Law 144 requiring bias audits for automated employment decision tools.
-- **NIST AI RMF** — voluntary, not law, but increasingly what "reasonable practice" gets measured against. Four functions: **Govern, Map, Measure, Manage.**
-- **ISO/IEC 42001** — the certifiable AI management system standard. Where NIST AI RMF is a framework you follow, ISO 42001 is something you can be audited against and put in a procurement response.
+**1. Existing regulators applying existing law.** The FTC on deceptive claims, the EEOC on hiring discrimination, financial and health regulators on their own firms. *"The AI did it"* has never been accepted as a defence. This layer has applied the whole time and is the one most organizations forget.
 
-> **Analogy:** the EU wrote one big rulebook. The US is enforcing a dozen old rulebooks against a new tool. Both reach you; only one is easy to look up.
+**2. State law — where the actual movement is.** The landscape shifted hard in 2026:
 
-**So what / now what:** if you sell to enterprises or the public sector, ISO 42001 and NIST AI RMF alignment increasingly show up in procurement questionnaires *before* any law compels them. Customers become your regulator first.
+| Jurisdiction | What it requires | Status |
+|---|---|---|
+| **NYC Local Law 144** | The only US law mandating a bias audit *by name*: annual independent audit of automated employment decision tools, publicly posted results summary, ≥10 business days' notice to candidates. Auditors test adverse impact using the EEOC's four-fifths rule. | In force |
+| **Illinois HB 3773** (amends the Human Rights Act) | Disclose when AI is used in employment decisions; discrimination liability for biased outcomes; **bars using zip code as a proxy** for protected classes. | Effective 1 Jan 2026 |
+| **Illinois BIPA** | Separate and still the strictest US biometric regime — notable for its **private right of action** and substantial damages. | In force |
+| **California (CPPA ADMT rules)** | For significant decisions including employment: pre-use notice, opt-out, access right, appeal right, and a **pre-use risk assessment**. | Phasing in across 2026–2027 |
+| **Colorado SB 26-189** | **Repealed and replaced** the 2024 Colorado AI Act (SB 24-205). Much narrower: transparency about consequential decisions, a structured adverse-action and **human review** process, and record retention for ≥3 years. A disclosure regime, *not* the original reasonable-care duty. | Signed 14 May 2026, effective **1 Jan 2027** |
+| **Texas HB 149** | Among the broadest enacted state AI laws. | Enacted |
+
+> **Do not teach the 2024 Colorado AI Act.** It was repealed. A lot of training material still circulating describes obligations that no longer exist, and quoting them is an easy way to lose a room that has counsel in it.
+
+**3. Frameworks — voluntary, but increasingly load-bearing.** Three things get conflated constantly, and they do three different jobs:
+
+- **EU AI Act** — *binding law.*
+- **NIST AI RMF** — a *voluntary method.* Four functions: **Govern, Map, Measure, Manage.** NIST publishes crosswalk documents mapping it to ISO/IEC 42001, the EU AI Act and the OECD AI Principles, so adopting one doesn't strand you.
+- **ISO/IEC 42001** — a *certifiable management-system standard.* Something you can be audited against and put in a procurement response.
+
+**The commercially important part:** the Texas and California regimes offer **safe harbour or a rebuttable presumption of compliance** where a business has implemented a recognised framework such as NIST AI RMF or ISO/IEC 42001. That converts "voluntary best practice" into a legal shield, and it is the single strongest argument for doing governance work *before* you are compelled to.
+
+**Federal direction of travel:** Executive Order 14110 was rescinded in January 2025 and superseded by EO 14179, and there is an active push toward a national policy framework with **federal preemption** of state AI law, alongside agency deliverables landing through 2026 (Commerce, FCC, FTC). Two cautions for teaching: this is genuinely unsettled and will have moved by the time you deliver it, and **state attorney-general enforcement under existing consumer-protection law survives regardless** of what happens to AI-specific statutes. Preemption of a state AI act is not immunity.
+
+> **Analogy:** the EU wrote one big rulebook and keeps amending it. The US is enforcing a dozen old rulebooks against a new tool, while fifty states each draft their own. Both reach you; neither is easy to look up, and the US one changes underneath you.
+
+**So what / now what:** two forces push the same way. If you sell to enterprises or the public sector, ISO 42001 and NIST AI RMF alignment show up in procurement questionnaires *before* any law compels them — customers become your regulator first. And where safe harbour exists, the same framework work that wins the deal also limits the liability. That is a rare alignment, and it is the argument to lead with when leadership asks why governance is worth funding now rather than later.
 
 ---
 
